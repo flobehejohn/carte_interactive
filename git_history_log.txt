@@ -1,0 +1,6 @@
+* 01a1d78 (tag: v0.7.0.2, origin/merge-bolt-iteration, origin/bolt-iteration-X, merge-bolt-iteration, master, bolt-iteration-X) Sauvegarde de l'itération actuelle de Bolt
+*   79f1859 (HEAD -> version-0.7.0.2, origin/version-0.7.0.2, origin/main, main) Merge pull request #1 from flobehejohn/version-0.7.0.1
+|\  
+| * 4d3c67e Version 0.7.0.1 - Dernière itération Bolt
+|/  
+* 9ce82c0 Initial commit for Bolt import
