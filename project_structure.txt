@@ -1,0 +1,218 @@
+Structure du dossier pour le volume Data
+Le num‚ro de s‚rie du volume est 0650-43A1
+D:.
+³   .dockerignore
+³   .env
+³   .env.example
+³   .gitignore
+³   architecture_project.txt
+³   BOLT_ACTIONS.md
+³   bolt_debug_logs.txt
+³   bolt_logs.txt
+³   bolt_logs_0_7_0_2.tar.gz
+³   CHANGELOG.md
+³   docker-compose.dev.yml
+³   docker-compose.yml
+³   Dockerfile
+³   eslint.config.js
+³   git_history_log.txt
+³   git_log.txt
+³   Gruntfile.cjs
+³   index.html
+³   package-lock.json
+³   package.json
+³   project_structure.txt
+³   README.md
+³   tsconfig.app.json
+³   tsconfig.json
+³   tsconfig.node.json
+³   ts_files_structure.txt
+³   vite.config.ts
+³   vitest.config.ts
+³   yarn.lock
+³   
+ÃÄÄÄ.bolt
+³       config.json
+³       prompt
+³       
+ÃÄÄÄdocs
+³       partner-dialog.md
+³       README.md
+³       
+ÃÄÄÄscripts
+³       docker-build-log.sh
+³       
+ÀÄÄÄsrc
+    ³   App.tsx
+    ³   main.tsx
+    ³   vite-env.d.ts
+    ³   
+    ÃÄÄÄcomponents
+    ³   ³   CategorySelector.tsx
+    ³   ³   index.ts
+    ³   ³   LogViewer.tsx
+    ³   ³   Modal.tsx
+    ³   ³   PartnerDialog.tsx
+    ³   ³   PhotoUploader.tsx
+    ³   ³   Sidebar.tsx
+    ³   ³   
+    ³   ÃÄÄÄevents
+    ³   ³   ³   index.ts
+    ³   ³   ³   
+    ³   ³   ÃÄÄÄCalendar
+    ³   ³   ³       Calendar.tsx
+    ³   ³   ³       CalendarEvent.tsx
+    ³   ³   ³       CalendarGrid.tsx
+    ³   ³   ³       CalendarHeader.tsx
+    ³   ³   ³       DayView.tsx
+    ³   ³   ³       index.ts
+    ³   ³   ³       WeekView.tsx
+    ³   ³   ³       YearView.tsx
+    ³   ³   ³       
+    ³   ³   ÃÄÄÄEventDialog
+    ³   ³   ³   ³   EventDialog.tsx
+    ³   ³   ³   ³   index.ts
+    ³   ³   ³   ³   PartnerTimeSlots.tsx
+    ³   ³   ³   ³   types.ts
+    ³   ³   ³   ³   useEventForm.ts
+    ³   ³   ³   ³   validation.ts
+    ³   ³   ³   ³   
+    ³   ³   ³   ÀÄÄÄcomponents
+    ³   ³   ³           DialogHeader.tsx
+    ³   ³   ³           EventForm.tsx
+    ³   ³   ³           index.ts
+    ³   ³   ³           
+    ³   ³   ÀÄÄÄPartnerTimeSlots
+    ³   ³           index.ts
+    ³   ³           PartnerTimeSlots.tsx
+    ³   ³           
+    ³   ÃÄÄÄlayout
+    ³   ³   ³   index.ts
+    ³   ³   ³   Sidebar.tsx
+    ³   ³   ³   
+    ³   ³   ÀÄÄÄSidebar
+    ³   ³           index.ts
+    ³   ³           Sidebar.tsx
+    ³   ³           
+    ³   ÃÄÄÄpartners
+    ³   ³   ³   index.ts
+    ³   ³   ³   
+    ³   ³   ÃÄÄÄCategorySelector
+    ³   ³   ³       CategoryPath.tsx
+    ³   ³   ³       CategorySelect.tsx
+    ³   ³   ³       CategorySelector.tsx
+    ³   ³   ³       index.ts
+    ³   ³   ³       index.tsx
+    ³   ³   ³       useCategories.ts
+    ³   ³   ³       
+    ³   ³   ÃÄÄÄPartnerDialog
+    ³   ³   ³   ³   index.ts
+    ³   ³   ³   ³   index.tsx
+    ³   ³   ³   ³   PartnerDialog.tsx
+    ³   ³   ³   ³   README.md
+    ³   ³   ³   ³   usePartnerForm.ts
+    ³   ³   ³   ³   validation.ts
+    ³   ³   ³   ³   
+    ³   ³   ³   ÀÄÄÄ__tests__
+    ³   ³   ³           PartnerDialog.test.tsx
+    ³   ³   ³           
+    ³   ³   ÃÄÄÄPartnerHistory
+    ³   ³   ³       index.ts
+    ³   ³   ³       PartnerHistory.tsx
+    ³   ³   ³       PartnerHistoryFilters.tsx
+    ³   ³   ³       PartnerHistoryTable.tsx
+    ³   ³   ³       types.ts
+    ³   ³   ³       usePartnerHistorySearch.ts
+    ³   ³   ³       
+    ³   ³   ÃÄÄÄPartnerStats
+    ³   ³   ³       index.ts
+    ³   ³   ³       PartnerStats.tsx
+    ³   ³   ³       
+    ³   ³   ÃÄÄÄPartnerTable
+    ³   ³   ³       index.ts
+    ³   ³   ³       PartnerTable.tsx
+    ³   ³   ³       
+    ³   ³   ÃÄÄÄPhotoGallery
+    ³   ³   ³       index.ts
+    ³   ³   ³       PhotoGallery.tsx
+    ³   ³   ³       
+    ³   ³   ÀÄÄÄPhotoUploader
+    ³   ³           CropDialog.tsx
+    ³   ³           DropZone.tsx
+    ³   ³           index.ts
+    ³   ³           index.tsx
+    ³   ³           PhotoUploader.tsx
+    ³   ³           types.ts
+    ³   ³           utils.ts
+    ³   ³           
+    ³   ÃÄÄÄtest
+    ³   ³       index.ts
+    ³   ³       TestSentry.tsx
+    ³   ³       
+    ³   ÀÄÄÄui
+    ³       ³   Button.tsx
+    ³       ³   Card.tsx
+    ³       ³   index.ts
+    ³       ³   Input.tsx
+    ³       ³   Select.tsx
+    ³       ³   
+    ³       ÃÄÄÄButton
+    ³       ³       Button.tsx
+    ³       ³       index.ts
+    ³       ³       
+    ³       ÀÄÄÄModal
+    ³               index.ts
+    ³               Modal.tsx
+    ³               
+    ÃÄÄÄhooks
+    ³       index.ts
+    ³       useApi.ts
+    ³       useEvents.ts
+    ³       useLogger.ts
+    ³       usePartners.ts
+    ³       
+    ÃÄÄÄmiddleware
+    ³       networkLogger.ts
+    ³       
+    ÃÄÄÄpages
+    ³       CalendarPage.tsx
+    ³       GalleryPage.tsx
+    ³       PartnersPage.tsx
+    ³       
+    ÃÄÄÄtest
+    ³       setup.ts
+    ³       
+    ÃÄÄÄtheme
+    ³       index.ts
+    ³       
+    ÃÄÄÄtypes
+    ³       index.ts
+    ³       
+    ÀÄÄÄutils
+        ³   categories.ts
+        ³   categoryIcons.ts
+        ³   categoryUtils.ts
+        ³   http-client.test.ts
+        ³   http-client.ts
+        ³   index.ts
+        ³   logger.ts
+        ³   storage.ts
+        ³   
+        ÀÄÄÄlogger
+            ³   console-logger.ts
+            ³   constants.ts
+            ³   index.ts
+            ³   logger-service.ts
+            ³   logger.ts
+            ³   sentry-logger.ts
+            ³   sentry.ts
+            ³   storage.ts
+            ³   types.ts
+            ³   
+            ÀÄÄÄ__tests__
+                    console-logger.test.ts
+                    integration.test.ts
+                    logger.test.ts
+                    sentry-logger.test.ts
+                    storage.test.ts
+                    

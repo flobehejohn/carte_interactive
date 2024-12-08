@@ -1,6 +1,10 @@
-291c8b9 Ajout des logs archivés pour Bolt
-ba7002f Ajout des logs d'actions Bolt
-0742fae Description des modifications apportées par Bolt (ex : Ajout de la suppression des partenaires dans PartnerTable.tsx)
-79f1859 Merge pull request #1 from flobehejohn/version-0.7.0.1
-4d3c67e Version 0.7.0.1 - Dernière itération Bolt
-9ce82c0 Initial commit for Bolt import
+* 68c6ec8 Ajout des fichiers de documentation et d'architecture :- BOLT_ACTIONS.md : Documentation des actions dans Bolt- architecture_project.txt : Structure détaillée du projet- git_log.txt : Historique des logs Git- ts_files_structure.txt : Structure des fichiers TypeScript
+* 291c8b9 Ajout des logs archivés pour Bolt
+* ba7002f Ajout des logs d'actions Bolt
+* 0742fae Description des modifications apportées par Bolt (ex : Ajout de la suppression des partenaires dans PartnerTable.tsx)
+*   79f1859 Merge pull request #1 from flobehejohn/version-0.7.0.1
+|\  
+| * 4d3c67e Version 0.7.0.1 - Dernière itération Bolt
+|/  
+* 9ce82c0 Initial commit for Bolt import
+* 01a1d78 Sauvegarde de l'itération actuelle de Bolt
