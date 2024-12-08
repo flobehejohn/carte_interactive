@@ -1,0 +1,6 @@
+291c8b9 Ajout des logs archivés pour Bolt
+ba7002f Ajout des logs d'actions Bolt
+0742fae Description des modifications apportées par Bolt (ex : Ajout de la suppression des partenaires dans PartnerTable.tsx)
+79f1859 Merge pull request #1 from flobehejohn/version-0.7.0.1
+4d3c67e Version 0.7.0.1 - Dernière itération Bolt
+9ce82c0 Initial commit for Bolt import
