@@ -1,47 +1,32 @@
 #!/bin/bash
 
-# Variables
-REPO_PATH="D:/projet_pro/ophm/carte_interactive_dsu_/dev/save_app_demo/bolt/gte_bolt_03_12_2024_0_7_0_2/project"
-HISTORY_FILE="$REPO_PATH/history_log.md"
-CURRENT_DATE=$(date +"%Y-%m-%d %H:%M:%S")
-BRANCH_NAME="main"
+# Chemin du projet
+PROJECT_PATH="D:/projet_pro/ophm/carte_interactive_dsu_/dev/save_app_demo/bolt/gte_bolt_03_12_2024_0_7_0_2/project"
+cd "$PROJECT_PATH" || exit
 
-# Se déplacer dans le répertoire du projet
-cd "$REPO_PATH" || { echo "Erreur : Répertoire introuvable."; exit 1; }
+# Étape 1 : Installer les dépendances manquantes
+npm install || yarn install
 
-# Vérifier les changements
-changed_files=$(git status --porcelain | awk '{print $2}')
-
-if [ -z "$changed_files" ]; then
-  echo "[$CURRENT_DATE] Aucun changement détecté."
+# Étape 2 : Vérification des fichiers modifiés
+modified_files=$(git diff --name-only)
+if [ -z "$modified_files" ]; then
+  echo "Aucune modification détectée."
   exit 0
 fi
 
-# Ajouter les fichiers au staging
-git add .
-
-# Mettre à jour le fichier d'historique
-echo "## [$CURRENT_DATE] - Modifications détectées" >> "$HISTORY_FILE"
-echo "- **Fichiers modifiés :**" >> "$HISTORY_FILE"
-
-for file in $changed_files; do
-  echo "  - $file" >> "$HISTORY_FILE"
+# Étape 3 : Génération du journal d'historique
+history_file="history_log.md"
+echo -e "## Modification détectée $(date +"%Y-%m-%d %H:%M:%S")\n" >> "$history_file"
+for file in $modified_files; do
+  echo "- $file" >> "$history_file"
 done
+echo -e "\n" >> "$history_file"
 
-echo "---" >> "$HISTORY_FILE"
-
-# Ajouter le fichier d'historique au commit
-git add "$HISTORY_FILE"
-
-# Commit des changements avec horodatage
-commit_message="Sauvegarde automatique : $CURRENT_DATE"
+# Étape 4 : Commit et push
+git add .
+commit_message="Sauvegarde automatique : $(date +"%Y-%m-%d %H:%M:%S")"
 git commit -m "$commit_message"
+git tag "auto-$(date +"%Y%m%d-%H%M%S")"
+git push origin main --tags
 
-# Créer une balise horodatée pour ce commit
-tag_name="backup-$(date +"%Y%m%d-%H%M%S")"
-git tag "$tag_name"
-
-# Pousser les changements vers GitHub
-git push origin "$BRANCH_NAME" --tags
-
-echo "[$CURRENT_DATE] Changements sauvegardés et poussés avec succès."
+echo "Sauvegarde et historique mis à jour avec succès."
